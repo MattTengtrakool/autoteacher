@@ -1,4 +1,4 @@
-from transformers import pipeline
+from transformers import pipeline,GPT2Tokenizer
 import openai
 import json
 import re
@@ -18,6 +18,25 @@ def generate_questions(text, num_questions=20, max_length=2500):
     questions = re.findall(r"\n(.*?)\?", response.choices[0].text)
     return [q.strip() + "?" for q in questions[:num_questions]]
 
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+
+def get_openai_answer(prompt, context):
+    max_context_tokens = 4097 - 150 - 1  # Reserve 150 tokens for the completion and 1 for the separator
+    
+    context_tokens = tokenizer.encode(context, return_tensors="pt")[0]
+    if len(context_tokens) > max_context_tokens:
+        context_tokens = context_tokens[:max_context_tokens]
+    truncated_context = tokenizer.decode(context_tokens)
+    
+    response = openai.Completion.create(
+        engine="text-davinci-002",
+        prompt=f"{prompt} {truncated_context}",
+        max_tokens=150,
+        n=1,
+        stop=None,
+        temperature=0.7,
+    )
+    return response.choices[0].text.strip()
 
     
 def truncate_text(text, max_length):
@@ -44,12 +63,12 @@ nlp = pipeline("question-answering", model="bert-large-uncased")
 prompts_and_responses = []
 
 for prompt in prompts:
-    # Generate a response using the question-answering model
-    response = nlp(question=prompt, context=text_content, max_answer_tokens=150, temperature=0.8)
+    # Generate a response using the OpenAI API
+    response = get_openai_answer(prompt, text_content)
     
     prompts_and_responses.append({
         "prompt": prompt,
-        "response": response["answer"]
+        "response": response
     })
 
 # Save prompts and responses to a file

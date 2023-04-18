@@ -1,33 +1,30 @@
-Prompt: 1. What is a compiler?
-Response: _int ( "y: " );//
+Prompt: 1. How does one approach a computer science related problem?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  0 ;do  {  n  =  get_int ( "Size: " );}  while  ( n  <  1  ||  n  >  8 );for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice the new code: do...while loop. This will continue to prompt the user until they provide a value between
 
-Prompt: 2. What is the purpose of a compiler?
-Response: subtraction  - code: * for multiplication  - code: /
+Prompt: 2. What is the most commonly used command line argument?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  get_int ( "Size: " );if  ( n  <  1 )  {  printf ( "Retry: " ); n  =  get_int ( "Size: " );}  for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice that we use an code: if statement to ensure that code: n is a
 
-Prompt: 3. What is the difference between source code and machine code?
-Response: and how to implement your own functions.-
+Prompt: 3. What is the difference between a for loop and a while loop?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  get_int ( "Size: " );if  ( n  <  1  ||  n  >  8 )  {  printf ( "Size must be a positive integer less than or equal to 8 \n " );}  else  {  for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  }  Notice that an code:
 
-Prompt: 4. What is the difference between a CLI and a terminal window?
-Response: and improve your code.-
+Prompt: 4. How can you create an infinite loop in C?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  - 1 ;while  ( n  <  0  ||  n  >  23 )  {  n  =  get_int ( "Size: " );}  for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice that our variable code: n is now set to code: -1. A variable called code: -1
 
-Prompt: 5. What is the difference between an executable file and a source code file?
-Response: _int ( "y: " );//
+Prompt: 5. What is the purpose of the semicolon in C?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  get_int ( "Size: " );if  ( n  <  1 )  {  printf ( "Size must be a positive integer \n " );}  else  {  for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  }  Notice how code: if checks to make sure that code: n is positive. If not,
 
-Prompt: 6. What is the purpose of the #include command?
-Response: and improve your code.-
+Prompt: 6. What is the purpose of the #include statement?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  get_int ( "Size: " );if  ( n  >  23 || n  <  0 )  {  printf ( "Retry: " );return  1 ;}  for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice how the program will prompt the user again if an incorrect value is given.-  We can use
 
-Prompt: 7. What is the purpose of the stdio.h library?
-Response: symbol.-
+Prompt: 7. What is the difference between a char and a string in C?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  0 ;do  {  n  =  get_int ( "Size: " );}  while  ( n  <  1  ||  n  >  8 );for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice that our code: do...while loop continues to run as long as a number less than one or greater than
 
-Prompt: 8. What is the purpose of the cs50.h library?
-Response: symbol.-
+Prompt: 8. How can you get input from a user in C?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  get_int ( "Size: " );if  ( n < 1 || n > 8 )  {  printf ( "Size must be a positive integer less than or equal to 8. \n " );}  for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice that code: n < 1 || n > 8 is used to check that
 
-Prompt: 9. What is the difference between a variable and a data type?
-Response: symbol.-
+Prompt: 9. What is the purpose of a variable in C?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n ;do  {  n  =  get_int ( "Size: " );}  while ( n  <  1  ||  n  >  8 );for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice how a do-while loop is used to prompt the user over and over again until a value between one and eight is entered.-
 
-Prompt: 10. What is the difference between an int and a char?
-Response: and how to implement your own functions.-
-
-Prompt: 11. What is the purpose of a conditional?
-Response: subtraction  - code: * for multiplication  - code: /
+Prompt: 10. What is the difference between = and == in C?
+Response: #include  <stdio.h>   int  main ( void )  {  int  n  =  get_int ( "Size: " );if  ( n  <  1 )  {  printf ( "Retry: " );n  =  get_int ();}  for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice how code: if (n < 1) will run if the user does not enter a positive integer.
 
