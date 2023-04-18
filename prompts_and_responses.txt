@@ -1,0 +1,33 @@
+Prompt: 1. What is a compiler?
+Response: _int ( "y: " );//
+
+Prompt: 2. What is the purpose of a compiler?
+Response: subtraction  - code: * for multiplication  - code: /
+
+Prompt: 3. What is the difference between source code and machine code?
+Response: and how to implement your own functions.-
+
+Prompt: 4. What is the difference between a CLI and a terminal window?
+Response: and improve your code.-
+
+Prompt: 5. What is the difference between an executable file and a source code file?
+Response: _int ( "y: " );//
+
+Prompt: 6. What is the purpose of the #include command?
+Response: and improve your code.-
+
+Prompt: 7. What is the purpose of the stdio.h library?
+Response: symbol.-
+
+Prompt: 8. What is the purpose of the cs50.h library?
+Response: symbol.-
+
+Prompt: 9. What is the difference between a variable and a data type?
+Response: symbol.-
+
+Prompt: 10. What is the difference between an int and a char?
+Response: and how to implement your own functions.-
+
+Prompt: 11. What is the purpose of a conditional?
+Response: subtraction  - code: * for multiplication  - code: /
+
