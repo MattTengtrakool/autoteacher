@@ -1,0 +1,162 @@
+Prompt: What is Scratch?
+Response: Scratch is a visual programming language that teaches essential programming concepts.
+
+Prompt: What is source code?
+Response: Source code is a list of instructions for the computer, written in a human-readable form.
+
+Prompt: What is machine code?
+Response: Machine code is a pattern of ones and zeros that machines understand and execute to produce a desired effect.
+
+Prompt: What is a compiler?
+Response: A compiler is a special piece of software that converts source code into machine code.
+
+Prompt: What are the three axes for evaluating code?
+Response: The three axes for evaluating code are correctness, design, and style.
+
+Prompt: What is Visual Studio Code (VS Code)?
+Response: Visual Studio Code is the compiler used for this course, which has all the required software pre-loaded and can be accessed at code.cs50.io.
+
+Prompt: What are the main regions of the compiler?
+Response: The main regions of the compiler are the file explorer, the text editor, and the command line interface (CLI).
+
+Prompt: What is the purpose of #include <stdio.h>?
+Response: It is a command that tells the compiler to use the capabilities of the stdio.h library, which allows the use of the printf function among other things.
+
+Prompt: What is the printf function in C?
+Response: The printf function in C is used to display text on the screen, similar to the say block in Scratch.
+
+Prompt: What happens if a semicolon is omitted in C programming?
+Response: Omitting a semicolon in C programming can result in numerous errors.
+
+Prompt: What is the special symbol \n used for?
+Response: The special symbol \n is used to represent a newline character in the text.
+
+Prompt: What does the cs50.h library provide?
+Response: The cs50.h library provides additional functions and capabilities specifically for the CS50 course.
+
+Prompt: What is a variable in C?
+Response: A variable in C is a special holding place that can store a value of a specific data type.
+
+Prompt: What are some common data types in C?
+Response: Some common data types in C include int, bool, char, string, and others.
+
+Prompt: What are conditionals in programming?
+Response: Conditionals in programming are statements that allow code to be executed based on whether a certain condition is met or not.
+
+Prompt: What are loops in programming?
+Response: Loops in programming are structures that allow a set of instructions to be executed repeatedly until a certain condition is met.
+
+Prompt: What are some common Linux command-line arguments?
+Response: Some common Linux command-line arguments include cd, cp, ls, mkdir, mv, rm, and rmdir.
+
+Prompt: What is the purpose of comments in code?
+Response: Comments in code provide explanatory remarks for the programmer and collaborators, helping to understand and revise the code later.
+
+Prompt: What is abstraction in programming?
+Response: Abstraction in programming is the art of simplifying code by breaking it down into smaller, more manageable problems.
+
+Prompt: What are operators in C?
+Response: Operators in C are mathematical operations supported by the compiler, such as +, -, *, /, and %.
+
+Prompt: What are types in C?
+Response: Types in C are the possible data that can be stored within a variable, such as bool, char, double, float, int, long, and string.
+
+Prompt:
+What is the purpose of a compiler?
+Response:
+The purpose of a compiler is to convert source code written in a programming language (human-readable) into machine code (a pattern of ones and zeros) that can be executed by a computer.
+
+Prompt:
+What is Visual Studio Code, also known as VS Code?
+Response:
+Visual Studio Code, or VS Code, is a popular integrated development environment (IDE) used for coding, debugging, and managing source code. It comes with many features and extensions to facilitate software development.
+
+Prompt:
+What is the significance of the .c file extension?
+Response:
+The .c file extension is used to indicate a source code file written in the C programming language.
+
+Prompt:
+What are the three axes upon which code can be evaluated?
+Response:
+Code can be evaluated on three axes: correctness (does the code run as intended?), design (how well is the code designed?), and style (how aesthetically pleasing and consistent is the code?).
+
+Prompt:
+What does the command make hello do in the terminal?
+Response:
+The command make hello compiles the source code file hello.c into an executable program named hello, using a compiler.
+
+Prompt:
+What is the role of the #include <stdio.h> statement in C programs?
+Response:
+The #include <stdio.h> statement is a preprocessor directive that tells the compiler to include the standard input-output library (stdio.h), which provides functions like printf for input and output operations.
+
+Prompt:
+What is a variable in C programming?
+Response:
+A variable in C programming is a named memory location used to store a value of a specific data type, such as int, float, char, or string. It can be used and manipulated throughout the program.
+
+Prompt:
+What are conditionals in programming?
+Response:
+Conditionals in programming are constructs that allow a program to make decisions and execute different code blocks based on whether a given condition is true or false. Common conditional statements include if, else, and else if.
+
+Prompt:
+What is a loop in programming?
+Response:
+A loop in programming is a control structure that allows a block of code to be executed repeatedly as long as a specified condition is true. Common loop structures include for, while, and do-while loops.
+
+Prompt:
+What is the purpose of comments in code?
+Response:
+Comments in code serve as explanatory remarks that provide information or clarification about the code's functionality. They are useful for both the programmer and other collaborators, helping to improve code readability and maintainability.
+
+Prompt:
+What is abstraction in programming?
+Response:
+Abstraction in programming is the process of simplifying complex code by breaking it down into smaller, more manageable pieces or functions. This allows for better organization, easier debugging, and improved code maintainability.
+
+Prompt:
+What are operators and types in C programming?
+Response:
+Operators are symbols that represent mathematical operations, such as addition, subtraction, multiplication, division, and remainder. Types are the various data categories that can be stored in variables, such as int, float, char, string, bool, and double.
+
+Prompt:
+What are arrays in C programming?
+Response:
+Arrays in C programming are a collection of elements of the same data type, stored in contiguous memory locations. They are used to store multiple values in a single variable and can be accessed using indices.
+
+Prompt:
+What is the purpose of a function in programming?
+Response:
+A function in programming is a named, reusable block of code that performs a specific task. Functions help to break down complex code into smaller, more manageable units, which makes the code more organized, modular, and easier to maintain.
+
+Prompt:
+What are pointers in C programming?
+Response:
+Pointers in C programming are variables that store the memory address of another variable. They allow for more efficient and flexible memory management, as well as the ability to work with dynamic data structures, such as linked lists and trees.
+
+Prompt:
+What is recursion in programming?
+Response:
+Recursion in programming is a technique where a function calls itself in its definition, either directly or indirectly. Recursion can be used to solve problems that can be broken down into smaller, similar subproblems and is an alternative to using iterative loops.
+
+Prompt:
+What is the difference between a compiler and an interpreter?
+Response:
+A compiler translates source code written in a programming language into machine code, which can then be executed by a computer. An interpreter, on the other hand, translates and executes source code line by line, without generating an intermediate machine code file. Compilers usually offer better performance, while interpreters provide better flexibility and ease of debugging.
+
+Prompt:
+What is the difference between syntax and semantics in programming languages?
+Response:
+Syntax refers to the rules that govern the structure and formatting of a programming language, such as how statements and expressions are written. Semantics, on the other hand, refers to the meaning and behavior of the code, i.e., what the code is intended to do.
+
+Prompt:
+What are data structures in programming?
+Response:
+Data structures in programming are specialized formats for organizing, storing, and manipulating data within a program. Common data structures include arrays, linked lists, trees, graphs, stacks, and queues. Each data structure has its own advantages and trade-offs, depending on the specific requirements of the problem being solved.
+
+Prompt:
+What is the purpose of a linker in programming?
+Response:
+A linker in programming is a tool that combines multiple object files (generated by a compiler) and libraries into a single executable program. The linker resolves external references and symbols between the object files and libraries, ensuring that all dependencies are properly addressed.
