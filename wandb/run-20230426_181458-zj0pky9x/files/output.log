@@ -1,0 +1,21 @@
+  0%|                                                                                                                                                                                                         | 0/2522 [00:00<?, ?it/s]Using pad_token, but it is not set yet.
+Traceback (most recent call last):
+  File "/Users/matt/CS181ExtraCredit/finetuneDataset.py", line 53, in <module>
+    trainer.train()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/trainer.py", line 1899, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 634, in __next__
+    data = self._next_data()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 678, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/data/data_collator.py", line 249, in __call__
+    batch = self.tokenizer.pad(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/tokenization_utils_base.py", line 2995, in pad
+    padding_strategy, _, max_length, _ = self._get_padding_truncation_strategies(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/tokenization_utils_base.py", line 2443, in _get_padding_truncation_strategies
+    raise ValueError(
+ValueError: Asking to pad but the tokenizer does not have a padding token. Please select a token to use as `pad_token` `(tokenizer.pad_token = tokenizer.eos_token e.g.)` or add a new pad token via `tokenizer.add_special_tokens({'pad_token': '[PAD]'})`.

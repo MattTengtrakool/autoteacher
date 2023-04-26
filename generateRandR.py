@@ -43,7 +43,7 @@ def get_openai_answer(prompt, context):
     return response.choices[0].text.strip()
 
 input_folder = "output_nlp"
-output_file = "prompts_and_responsesnew.txt"
+output_file = "prompts_and_responsesnew2.txt"
 
 prompts_and_responses = []
 
@@ -56,10 +56,14 @@ for filename in os.listdir(input_folder):
     with open(file_path, "r", encoding="utf-8") as file:
         text_content = file.read()
 
+    '''for entity in analyze_entities(text_content).entities:
+        print(entity)
+    exit()'''
+    
     # Analyze the text_content
     response = analyze_entities(text_content)
 
-    for entity in response.entities:
+    '''for entity in response.entities:
         # Ask OpenAI API to generate a question related to the entity
         question_prompt = f"Generate a question about {entity.name}:"
         question = get_openai_answer(question_prompt, text_content)
@@ -72,7 +76,20 @@ for filename in os.listdir(input_folder):
         prompts_and_responses.append({
             "prompt": question,
             "response": answer
-        })
+        })'''
+    
+    question_prompt = f"Generate 20 questions about the following text content include necessary context at the start of each:"
+    question = get_openai_answer(question_prompt, text_content)
+    print(f"Generated question: {question}")
+
+    # Generate a response using the OpenAI API
+    answer = get_openai_answer(question, text_content)
+    print(f"Generated answer: {answer}")
+
+    prompts_and_responses.append({
+        "prompt": question,
+        "response": answer
+    })
 
     print(f"Finished processing {filename}\n")
 

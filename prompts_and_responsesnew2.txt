@@ -1,0 +1,131 @@
+Prompt: 1. What does the statement of code at the beginning of the text closed with?
+2. What is a common error in C programming?
+3. How do you modify your code to fix the common error?
+4. What happens when you run the code without the semicolon?
+5. What is the special symbol \n in your code?
+6. What happens to your program when you remove the \n from your code?
+7. What is the statement at the start of the code #include <stdio.h>?
+8. What is the printf function?
+9. What is the cs50.h library?
+10. How do you use the cs50.h library
+Response: In this case, it is used to get the user’s name.- Notice also the code: string answer = get_string("What's your name? "); In this case, you are creating a variable called code: answer and assigning it the value code: get_string("What's your name? ");. What that means is that the value of code: answer is going to be whatever the user enters when prompted with code: "What's your name? "- Notice also the printf statement. What the %s does is substitute in the value of code: answer for %s in the output of the printf statement. In this case, the output of the statement will be “hello, (whatever the user entered for
+
+Prompt: 1. What is the purpose of the code: command line interface?
+2. What does the code: make hello command do?
+3. What is the difference between the code: hello.c file and the code: hello file?
+4. How do you execute a C program?
+5. What is the purpose of the #include <stdio.h> line of code?
+6. What is the purpose of the int main (void) line of code?
+7. What is the purpose of the printf function?
+8. What is the difference between the code: say block and the printf function?
+9. What is the purpose of the \n character at the end of the "hello
+Response: 1. The purpose of the code: command line interface is to provide a way for users to interact with the computer using text commands.
+2. The code: make hello command will compile the code: hello.c file and create an executable file called code: hello.
+3. The code: hello.c file contains the source code for the program, while the code: hello file is the compiled executable file.
+4. To execute a C program, first the code must be compiled using a compiler such as make. Once the code is compiled, the executable file can be run by typing ./ followed by the file name.
+5. The line of code: #include <stdio.h> tells the compiler to
+
+Prompt: 1. What is the highest value an int can be?
+2. What is a Boolean expression?
+3. What is a char?
+4. What is a double?
+5. What is a float?
+6. What is an int?
+7. What is a long?
+8. What is a string?
+9. What is the get_int function?
+10. What is the printf function?
+11. What is the %i symbol?
+12. What should you pay special attention to when coding?
+13. What is C?
+14. What is Scratch?
+15. How do the building blocks learned in Scratch apply to C?
+16. What is
+Response: In addition, you learned about:-  The different types of data you can use in C-  How to write a simple calculator program in C-  How to compile and execute a C program-  What to pay special attention to when coding in C
+
+Prompt: 1. What is the name of the compiler used in this course?
+2. What is the url for the compiler?
+3. What are the three things that code can be evaluated upon?
+4. What is the most important reason for using the compiler mentioned in the text?
+5. What is the file explorer on the left side of the compiler used for?
+6. How is code converted into machine code?
+7. What is a compiler?
+8. What is machine code?
+9. What is source code?
+10. What is a visual programming language?
+Response: - The file explorer on the left side is used to help you easily navigate through your files.  - The main editor area is where you will be writing your code.  - The right side is where you will see the output of your code.  - The bottom where you see the terminal is where you will input commands.  - The top where you see the menu bar is where you will find a number of useful features.  - Code is converted into machine code by a compiler.## Functions  - Functions are a way of packaging code so that it can be reused.  - Functions take input and produce output.  - There are two types of functions:  - *Built-in functions* are provided by the language and you
+
+Prompt: 1. What is the first thing you learned in the text?
+2. How can you create your own functions in C?
+3. What are some of the predefined functions that come with C?
+4. How can you use variables, conditionals, and loops in your code?
+5. What is the Linux command line and how can it be used?
+6. How should you approach problem-solving for a computer science problem?
+7. What is the importance of comments in code?
+8. How can abstraction be used to simplify and improve your code?
+9. What are some of the different types and operators that can be used in C?
+10. What will be covered in the
+Response: section of the lesson?
+
+1. The first thing you learned in the text is how to create your first program in C.
+2. You can create your own functions in C by using the keyword "function."
+3. Some of the predefined functions that come with C include "printf" and "scanf."
+4. You can use variables, conditionals, and loops in your code by using the keywords "var," "if," and "for."
+5. The Linux command line is a text-based interface that can be used to execute commands.
+6. When solving a computer science problem, you should approach it by breaking it down into smaller pieces.
+7. Comments are important in code because they
+
+Prompt: In your terminal window, type code: code meow.c and write code as follows:code: #include  <cs50.h> #include  <stdio.h>   int  main ( void )  {  // Prompt user for int  int  n  =  get_int ( "n: " );// Print n meows for  ( int  i  =  0 ; i  <  n ; i ++ )  {  printf ( "meow \n " );}  }  Notice that we no longer need to set the value of code: i=- What is the difference between a while loop and a for loop?
+- What is the difference between = and == in
+Response: In the text editor, write the following:code: #include  <stdio.h>   int  main ( void )  {  for  ( int  i  =  3 ; i  >  0 ; i -- )  {  printf ( "meow \n " );}}  Notice how we utilize the code: for keyword to create a loop.  Within the parentheses, we create our counter code: i, start it at code: 3 and end it at code: 0. Each time the loop runs, it will reduce code: i by code: 1. Once the counter has reached code: 0, the loop will end.  Note that the variable code: i is only available within the scope
+
+Prompt: 1. What is the data type of "answer"?
+2. What does %s tell the printf function?
+3. How do you run a program in the terminal window?
+4. What is the purpose of a conditional?
+5. What is the difference between an "if" statement and an "else if" statement?
+6. How do you account for all potential outcomes in a program?
+7. What is a char data type?
+8. What is the purpose of a conditional?
+9. What is the difference between an "if" statement and an "else if" statement?
+10. How do you account for all potential outcomes in a program?
+11. What is the data
+Response: You might want to use your text editor for this one, but it's not necessary.  Write the following code within your agree.c file and then save it:code: #include  <cs50.h> #include  <stdio.h>   int  main ( void )  {  char  c  =  get_char ( "Do you agree? " )  if  ( c  ==  'Y'  ||  c  ==  'y' )  {  printf ( "Agreed! \n " );}  if  ( c  ==  'N'  ||  c  ==  'n' )  {  printf ( "Not agreed. \n
+
+Prompt: 1. What are some common command-line arguments used in Linux?
+2. What does the 'ls' command do?
+3. How can you rename a file using the 'mv' command?
+4. How can you create a new folder?
+5. What is the most commonly used command-line argument?
+6. What is the difference between a file and a directory?
+7. How can you delete a file?
+8. How can you delete a directory?
+9. What is the terminal window?
+10. What is an operating system?
+Response: For example, you can create a folder named code: cats by typing code: mkdir cats .- Deleting a file is done using the code: rm command.  For example, to delete code: hello.c, you would type code: rm hello.c .- Deleting a directory is done using the code: rmdir command.  For example, to delete the directory code: cats, you would type code: rmdir cats .- The terminal window is where we type our commands.  It is also known as a command prompt or shell.- An operating system is a software program that enables the computer hardware to communicate and operate with the computer software.
+
+Prompt: -  We can do so by adding a constant to our code. Let’s name this constant blocks. Add the following line of code:define blocks 3  -  Then, we can modify our code as follows:code: #include  <stdio.h>   define blocks 3   int  main ( void )  {  for  ( int  i  =  0 ;i  <  blocks ;i ++ )  {  for  ( int  j  =  0 ;j  <  blocks ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }
+
+1. What does the text content discuss?
+2. What is
+Response: -  We can do so by adding a constant to our code. Let’s name this constant blocks. Add the following line of code:define blocks 3  -  Then, we can modify our code as follows:code: #include  <stdio.h>   define blocks 3   int  main ( void )  {  for  ( int  i  =  0 ;i  <  blocks ;i ++ )  {  for  ( int  j  =  0 ;j  <  blocks ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }
+
+1. The text content discusses the various building-blocks of a programmer
+
+Prompt: In C, the following data types are supported:  - code: int for integers (whole numbers)  - code: char for characters (e.g., 'a', 'b', 'c', etc.)  - code: float for floating point numbers (e.g., 1.23, 3.14, 42.0, etc.)  - code: double for large floating point numbers (e.g., 1.234, 3.142, 42.000, etc.)
+
+1. What does the code: #include <cs50.h> do?
+2. What does the code: #include <stdio.h> do?
+3. What is the purpose of the main function
+Response: In C, the following data types are supported:  - code: int for integers (whole numbers)  - code: char for characters (e.g., 'a', 'b', 'c', etc.)  - code: float for floating point numbers (e.g., 1.23, 3.14, 42.0, etc.)  - code: double for large floating point numbers (e.g., 1.234, 3.142, 42.000, etc.)
+
+1. The code: #include <cs50.h> allows the programmer to use the CS50 Library, which includes functions that make it easier to program in C.
+2. The code: #include <stdio
+
+Prompt: -How does the code prompt the user for the size?
+-What is the significance of the code: n is now a constant?
+-How do you check to make sure the user's input satisfies our needs?
+-What is the purpose of comments in a computer program?
+Response: -
+-#include  <cs50.h> #include  <stdio.h>   int  main ( void )  {  int  n ;do  {  n  =  get_int ( "Size: " );}  // prompting the user for the size of the gridwhile  ( n  <  1 );for  ( int  i  =  0 ;i  <  n ;i ++ )  {  for  ( int  j  =  0 ;j  <  n ;j ++ )  {  printf ( "#" );}  printf ( " \n " );}  }  Notice how the user is prompted for the size of the grid
+

@@ -1,0 +1,12 @@
+  0%|                                                                                                                                                                                                         | 0/2522 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/Users/matt/CS181ExtraCredit/finetuneDataset.py", line 56, in <module>
+    trainer.train()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/trainer.py", line 1662, in train
+    return inner_training_loop(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/trainer.py", line 1929, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/trainer.py", line 2699, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/trainer.py", line 2744, in compute_loss
+    raise ValueError(
+ValueError: The model did not return a loss from the inputs, only the following keys: logits,past_key_values. For reference, the inputs it received are input_ids,attention_mask.
