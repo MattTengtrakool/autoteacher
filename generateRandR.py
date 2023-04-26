@@ -42,32 +42,43 @@ def get_openai_answer(prompt, context):
     )
     return response.choices[0].text.strip()
 
-
-
-# Read the text_content from the output_nlp.txt file
-with open("output_nlp.txt", "r", encoding="utf-8") as file:
-    text_content = file.read()
-
-# Analyze the text_content
-response = analyze_entities(text_content)
+input_folder = "output_nlp"
+output_file = "prompts_and_responsesnew.txt"
 
 prompts_and_responses = []
 
-for entity in response.entities:
-    # Use the entity name as a prompt
-    prompt = f"Please provide more information about {entity.name}"
+# Iterate over the files in the input folder
+for filename in os.listdir(input_folder):
+    print(f"Processing {filename}...")
+    file_path = os.path.join(input_folder, filename)
 
-    # Generate a response using the OpenAI API
-    answer = get_openai_answer(prompt, text_content)
+    # Read the text_content from the file
+    with open(file_path, "r", encoding="utf-8") as file:
+        text_content = file.read()
 
-    prompts_and_responses.append({
-        "prompt": prompt,
-        "response": answer
-    })
+    # Analyze the text_content
+    response = analyze_entities(text_content)
+
+    for entity in response.entities:
+        # Ask OpenAI API to generate a question related to the entity
+        question_prompt = f"Generate a question about {entity.name}:"
+        question = get_openai_answer(question_prompt, text_content)
+        print(f"Generated question: {question}")
+
+        # Generate a response using the OpenAI API
+        answer = get_openai_answer(question, text_content)
+        print(f"Generated answer: {answer}")
+
+        prompts_and_responses.append({
+            "prompt": question,
+            "response": answer
+        })
+
+    print(f"Finished processing {filename}\n")
 
 # Save prompts and responses to a file
-with open("prompts_and_responses.txt", "w", encoding="utf-8") as file:
+with open(output_file, "w", encoding="utf-8") as file:
     for item in prompts_and_responses:
         file.write(f"Prompt: {item['prompt']}\nResponse: {item['response']}\n\n")
 
-print("Prompts and responses saved to prompts_and_responses.txt.")
+print(f"Prompts and responses saved to {output_file}.")
